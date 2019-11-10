@@ -1,0 +1,42 @@
+.right{
+	color: #00E0B0;
+}
+.error{
+	color: red;
+}
+table{
+	box-shadow:0px 0px 6px #dcdcdc;
+	border-radius: 5px;
+}
+thead{
+	color:#ADADAD;
+}
+#dumpNumber{
+	width: 80px;
+	float: right;
+	margin-top: 20px ;
+	margin-left: 25px;
+}
+#dumpButton{
+	float: right;
+	margin-top: 20px ;
+	margin-left: 15px;
+}
+td img{
+	border: 1px solid #ADADAD;
+	border-radius: 50%;
+	width: 150px;
+	height:150px;
+}
+#studentInfo td{
+	text-align: center;
+	vertical-align: middle;
+}
+#batchDeal{
+	margin-top: 20px;
+}
+#studentInfo p{
+	text-indent: 2em;
+	font-size: 10px;
+	text-align: left;
+}

@@ -1,0 +1,36 @@
+body{
+	background-color: #EEEFF1;
+}
+/*难题排行大div*/
+.difficultRequest{
+	padding-left:80px ;
+	/*padding-right: 80px;*/
+}
+/*题目div*/
+.requestDiv{
+	background: rgb(255,255,255);
+	border-radius: 5px;
+	margin: 20px 0px 20px 30px;
+	box-shadow: 0px 0px 6px #dcdcdc;
+	cursor: pointer;
+}
+.requestDiv:hover{
+	box-shadow: 0px 0px 6px blue;
+}
+
+/*题目信息*/
+p.smallContext{
+	color:#ADADAD;
+}
+/*答题链接*/
+.requestImgage{
+	width:24px;
+	height: 23px;
+	float:right;
+	position: relative;
+	margin-right: 10px;
+	background: url(../img/edit1.png);
+}
+.requestImgage:hover{
+	background: url(../img/edit2.png);
+}

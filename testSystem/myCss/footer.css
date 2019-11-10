@@ -1,0 +1,27 @@
+/*二维码区域父元素*/
+#urlImage{
+	background: #202123;
+	padding: 20px;
+}
+/*包含二维码和二维码文字的div*/
+.Qr{
+	margin-bottom: 30px;
+}
+/*二维码上面的文字*/
+.QRCodeFont{
+	color: white;
+}
+/*二维码图片*/
+.QRCodeImage{
+	width: 120px; 
+	height: 120px; 
+	background-color: #1B6D85;
+}
+
+/*友情链接*/
+ul{
+	text-align: center;
+}
+ul li a{
+	color: white
+}

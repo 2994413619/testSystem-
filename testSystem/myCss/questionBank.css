@@ -1,0 +1,40 @@
+body{
+	background-color: #EEEFF1;
+}
+#edit{
+	width:24px;
+	height: 23px;
+	display: block;
+	background: url(../img/edit1.png);
+}
+#edit:hover{
+	background: url(../img/edit2.png);
+}
+table{
+	box-shadow:0px 0px 6px #dcdcdc;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+thead{
+	color:#ADADAD;
+}
+tr{
+	height: 50px;
+}
+.right{
+	color: #00E0B0;
+}
+.error{
+	color: red;
+}
+#dumpNumber{
+	width: 80px;
+	float: right;
+	margin-top: 20px ;
+	margin-left: 25px;
+}
+#dumpButton{
+	float: right;
+	margin-top: 20px ;
+	margin-left: 15px;
+}

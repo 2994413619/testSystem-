@@ -1,0 +1,60 @@
+body{
+	background-color: #EEEFF1;
+}
+.father{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	min-height: 499px;
+}
+#addQuestion{
+	position:fixed;
+	background-color: white;
+	border-radius: 5px;
+	padding:20px;
+	margin-top:-37px ;
+	margin-left: -15px;
+	height: 95%;
+	overflow: auto;
+}
+.questionType{
+	margin:10px;
+}
+.questionType img{
+	width: 21px;
+}
+#testTitle{
+	height: 100px;
+	font-size: 50px;
+	text-align: center;
+}
+.questionDiv{
+	background: white;
+	border-radius: 5px;
+	margin-top: 40px;
+	border: solid 1px #ADADAD;
+	padding:20px 40px;
+}
+#saveBtn{
+	display: block;
+	margin: 40px auto;
+}
+.questionStem{
+	margin-bottom: 20px;
+}
+.chechItem{
+	margin-bottom: 30px;
+}
+.rightDiv{
+	margin-top: 30px;
+	margin-left: 6px;
+}
+.editQuestion:hover{
+	cursor: pointer;
+}
+.questionIndex{
+	text-align: right;
+}
+
+img[edit='deletechoose']{
+	cursor: pointer;
+}

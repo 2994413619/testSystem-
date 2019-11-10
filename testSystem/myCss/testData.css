@@ -1,0 +1,14 @@
+h1{
+	text-align: center;
+}
+.right{
+	color: #00E0B0;
+}
+.error{
+	color: red;
+}
+.testInfo{
+	float:left;
+	margin: 5px 50px;
+	color: #ADADAD;
+}

@@ -1,0 +1,18 @@
+.loginHtml{
+	background: url(../img/loginbg1.jpg);
+	height: 588px;
+	margin-top: -9px;
+}
+.divForm{
+	/*width: 500px;*/
+	/*margin: 200px auto;*/
+	margin-top: 125px;
+	color: white;
+	background-color: rgba(200,200,200,0.5);
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+legend{
+	color: white;
+	text-align: center;
+}

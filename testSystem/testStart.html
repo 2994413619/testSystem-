@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>testSystem</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.js"></script>
+
+		<link rel="icon" href="img/icon.png" />
+
+		<!--header样式-->
+		<link rel="stylesheet" href="myCss/header.css" />
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+					<a class="navbar-brand" href="index.html">首页</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="questionBank.html">题库练习</a>
+						</li>
+						<li>
+							<a href="allTest.html">所有考试</a>
+						</li>
+						<li>
+							<a href="testMyself.html">自我测试</a>
+						</li>
+						<li>
+							<a href="studentManage.html">学生管理</a>
+						</li>
+						<li>
+							<a href="questionBankManage.html">题库管理</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+				        <li>
+				        	<a href="login.html">
+				        		<img src="img/noLogin.jpg" id="headImage"/>
+				        		&nbsp;登录/注册
+				        	</a>
+				        </li>
+				        <li>
+				        	<a href="userInformation.html">
+				        		注销
+				        	</a>
+				        </li>
+				    </ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+
+		<!--testMyselfStartCss-->
+		<link rel="stylesheet" href="myCss/testfStart.css" />
+		
+		<!--testMyselfStartJs-->
+		<script type="text/javascript" src="myjs/testfStart.js" ></script>
+		
+		<!--testMyselfStart-->
+		<div class="container-fluid">
+			
+			<div class="row col-lg-2 col-lg-offset-1 col-md-3 hidden-sm hidden-sm hidden-xs myindex">
+				<a href="#1" class="btn btn-primary mybtn">1</a>
+				<a href="#2" class="btn btn-primary mybtn">2</a>
+				<a href="#3" class="btn btn-primary mybtn">3</a>
+				<a href="#4" class="btn btn-primary mybtn">4</a>
+				<a href="#5" class="btn btn-primary mybtn">5</a>
+				<a href="#6" class="btn btn-primary mybtn">6</a>
+				<a href="#7" class="btn btn-primary mybtn">7</a>
+				<a href="#8" class="btn btn-primary mybtn">8</a>
+				<a href="#9" class="btn btn-primary mybtn">9</a>
+				<a href="#10" class="btn btn-default mybtn">10</a>
+				<a href="#11" class="btn btn-default mybtn">11</a>
+				<a href="#12" class="btn btn-default mybtn">12</a>
+				<a href="#13" class="btn btn-default mybtn">13</a>
+				<a href="#14" class="btn btn-default mybtn">14</a>
+				<a href="#15" class="btn btn-default mybtn">15</a>
+				<a href="#16" class="btn btn-default mybtn">16</a>
+				<a href="#17" class="btn btn-default mybtn">17</a>
+				<a href="#18" class="btn btn-default mybtn">18</a>
+				<a href="#19" class="btn btn-default mybtn">19</a>
+				<a href="#20" class="btn btn-default mybtn">20</a>
+				
+			</div>
+			
+			<div class="row col-lg-2 col-lg-offset-1 col-md-3 col-sm-4 hidden-xs countDown">
+				倒计时:
+				<span id="countDown"></span>
+			</div>
+			
+			<div class="row col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-3">
+				<h1 style="text-align: center;">综合测试</h1>
+				<div id="testInfo">
+					<span style="float: right;">考试时长：120分钟</span>
+					<span style="float: left;">试卷总分：100</span>
+					<span style="display:block;text-align: center;">开始考试时间：2018-10-5 10:00</span>
+				</div>
+				<!--单选-->
+				<a name="1"></a>
+				<div class="question">
+					<h4>
+						1、Cookie是带有domain（域名）的，每个web应用只能读取自己的cookie,cookie和浏览器有关，不同浏览器cookie是不能共享的。
+						（<span style="color: #00E0B0;">单选</span>）
+					</h4>
+					<p>
+						<div class="radio checkDiv">
+							<label>
+							    <input type="radio" name="asd" id="optionsRadios1" value="">
+							    A、测试文字
+							</label>
+						</div>
+					</p>
+					<p>
+						<div class="radio checkDiv">
+							<label>
+							    <input type="radio" name="asd" id="optionsRadios2" value="">
+							    B、测试文字
+							</label>
+						</div>
+					</p>
+					<p>
+						<div class="radio checkDiv">
+							<label>
+							    <input type="radio" name="asd" id="optionsRadios3" value="">
+							    C、测试文字
+							 </label>
+						</div>
+					</p>
+					<p>
+						<div class="radio checkDiv">
+							<label>
+							    <input type="radio" name="asd" id="optionsRadios3" value="">
+							    D、测试文字
+							 </label>
+						</div>
+					</p>
+				</div> 
+				<!--多选-->
+				<a name="2"></a>
+				<div class="question">
+					<h4>
+						2、Cookie是带有domain（域名）的，每个web应用只能读取自己的cookie,cookie和浏览器有关，不同浏览器cookie是不能共享的。
+						（<span style="color: #00E0B0;">多选</span>）
+					</h4>
+					<p>
+						<div class="checkbox checkDiv">
+							<label>
+							    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="">
+							    A、测试文字
+							</label>
+						</div>
+					</p>
+					<p>
+						<div class="checkbox checkDiv">
+							<label>
+							    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="">
+							    B、测试文字
+							</label>
+						</div>
+					</p>
+					<p>
+						<div class="checkbox checkDiv">
+							<label>
+							    <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="">
+							    C、测试文字
+							 </label>
+						</div>
+					</p>
+					<p>
+						<div class="checkbox checkDiv">
+							<label>
+							    <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="">
+							    D、测试文字
+							 </label>
+						</div>
+					</p>
+					<p>
+						<div class="checkbox checkDiv">
+							<label>
+							    <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="">
+							    E、测试文字
+							 </label>
+						</div>
+					</p>
+				</div>
+				<!--判断-->
+				<a name="3"></a>
+				<div class="question">
+					<h4>
+						3、Cookie是带有domain（域名）的，每个web应用只能读取自己的cookie,cookie和浏览器有关，不同浏览器cookie是不能共享的。
+					</h4>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+						<span class="glyphicon glyphicon-ok"></span>
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						<span class="glyphicon glyphicon-remove"></span>
+					</label>
+				</div>
+				<!--填空题-->
+				<a name="4"></a>
+				<div class="question">
+					<h4>
+						<div class="form-inline">
+							<div class="form-group">
+							    4、Cookie是带有domain（域名）的，每个
+							    <input type="text" class="form-control" id="exampleInputEmail3" autocomplete="off">
+							    只能读取自己的cookie,cookie和浏览器有关，
+							    <input type="text" class="form-control" id="exampleInputEmail3" autocomplete="off">
+							    不同浏览器cookie是不能共享的。
+							</div>
+						</div>
+					</h4>
+				</div>
+				<!--主观题-->
+				<a name="5"></a>
+				<div class="question">
+					<h4>
+						5、Cookie是带有domain（域名）的，每个web应用只能读取自己的cookie,cookie和浏览器有关，不同浏览器cookie是不能共享的。
+					</h4>
+					<textarea class="form-control" rows="6" placeholder="请写入你的答案" style="resize: none;"></textarea>
+				</div>
+				
+				<button class="btn btn-lg btn-primary" style="display: block;margin:30px auto;"> 交卷</button>
+			</div>
+		</div>
+
+		<!--footer样式-->
+		<link rel="stylesheet" href="myCss/footer.css" />
+		<div class="container-fluid" id="urlImage">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-md-offset-1 col-lg-offset-2 Qr">
+					<p class="QRCodeFont">扫二维码<br />下载网站APP</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 hidden-xs Qr">
+					<p class="QRCodeFont">扫二维码<br />登录网站</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 Qr">
+					<p class="QRCodeFont">扫二维码<br />关注网站公众号</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+			</div>
+
+			<ul class="list-inline">
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+			</ul>
+		</div>
+
+		<!--版权声明-->
+		<div class="container-fluid" style="background: black;">
+			<p align="center">版权所有 @2018-20xx 一个还没有出世的公司</p>
+			<p align="center">联系我们 李四：itlisi@lisi.com</p>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>testSystem</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.js"></script>
+
+		<link rel="icon" href="img/icon.png" />
+		
+		<!--header样式-->
+		<link rel="stylesheet" href="myCss/header.css" />
+		
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+					<a class="navbar-brand" href="index.html">首页</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="questionBank.html">题库练习</a>
+						</li>
+						<li class="active">
+							<a href="allTest.html">所有考试</a>
+						</li>
+						<li>
+							<a href="testMyself.html">自我测试</a>
+						</li>
+						<li>
+							<a href="studentManage.html">学生管理</a>
+						</li>
+						<li>
+							<a href="questionBankManage.html">题库管理</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+				        <li>
+				        	<a href="login.html">
+				        		<img src="img/noLogin.jpg" id="headImage"/>
+				        		&nbsp;登录/注册
+				        	</a>
+				        </li>
+				        <li>
+				        	<a href="userInformation.html">
+				        		注销
+				        	</a>
+				        </li>
+				      </ul>
+					
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+
+		<!--allTestData.css-->
+		<link rel="stylesheet" href="myCss/allTestDataDetails.css" />
+
+		<div class="container-fluid">
+			<h1>综合测试数据<small>——以题目为单位</small></h1>
+			
+			<div class="row testInfoFather">
+				<div class="testInfo">考试时间：2018-10-05 17:00</div>
+				<div class="testInfo">考试时长：120分</div>
+				<div class="testInfo">试卷总分：100</div>
+				<div class="testInfo">平均分：80</div>
+				<button class="btn btn-primary pull-right" style="margin-right: 17px;">导出数据</button>
+			</div>	
+			
+			<div class="table-responsive">
+				<table class="table table-bordered table-hover table-striped" style="margin-bottom: 50px;">
+					<thead>
+						<tr>
+							<th nowrap="nowrap">题号</th>
+							<th nowrap="nowrap">题型</th>
+							<th nowrap="nowrap">题干</th>
+							<th nowrap="nowrap">正确答案</th>
+							<th nowrap="nowrap">题目分值</th>
+							<th nowrap="nowrap">平均分</th>
+							<th nowrap="nowrap" class="right">正确人数</th>
+							<th nowrap="nowrap" class="error">错误人数</th>
+							<th nowrap="nowrap">正确率</th>
+							<th nowrap="nowrap">本题答题详情</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td nowrap="nowrap">1</td>
+							<td nowrap="nowrap">单选题</td>
+							<td>Cookie是由浏览器管理，cookie是可以被禁用的。Cookie	vs	session，Cookie可以存放大量的文本数据。安全性低，效率低</td>
+							<td nowrap="nowrap">C、InterruptedException</td>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">2.5</td>
+							<td nowrap="nowrap" class="right">24</td>
+							<td nowrap="nowrap" class="error">24</td>
+							<td nowrap="nowrap">50%</td>
+							<td nowrap="nowrap">
+								<a href="allTestDataChoose.html">本题详情</a>
+							</td>
+						</tr>
+						<tr>
+							<td nowrap="nowrap">2</td>
+							<td nowrap="nowrap">多选题</td>
+							<td>Cookie是由浏览器管理，cookie是可以被禁用的。Cookie	vs	session，Cookie可以存放大量的文本数据。安全性低，效率低</td>
+							<td nowrap="nowrap">C、InterruptedException</td>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">2.5</td>
+							<td nowrap="nowrap" class="right">24</td>
+							<td nowrap="nowrap" class="error">24</td>
+							<td nowrap="nowrap">50%</td>
+							<td nowrap="nowrap">
+								<a href="allTestDataMultiChoose.html">本题详情</a>
+							</td>
+						</tr>
+						<tr>
+							<td nowrap="nowrap">3</td>
+							<td nowrap="nowrap">判断题</td>
+							<td>Cookie是由浏览器管理，cookie是可以被禁用的。Cookie	vs	session，Cookie可以存放大量的文本数据。安全性低，效率低</td>
+							<td nowrap="nowrap">C、InterruptedException</td>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">2.5</td>
+							<td nowrap="nowrap" class="right">24</td>
+							<td nowrap="nowrap" class="error">24</td>
+							<td nowrap="nowrap">50%</td>
+							<td nowrap="nowrap">
+								<a href="allTestDataJudge.html">本题详情</a>
+							</td>
+						</tr>
+						<tr>
+							<td nowrap="nowrap">4</td>
+							<td nowrap="nowrap">填空题</td>
+							<td>Cookie是由浏览器管理，cookie是可以被禁用的。Cookie	vs	session，Cookie可以存放大量的文本数据。安全性低，效率低</td>
+							<td nowrap="nowrap">C、InterruptedException</td>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">2.5</td>
+							<td nowrap="nowrap" class="right">24</td>
+							<td nowrap="nowrap" class="error">24</td>
+							<td nowrap="nowrap">50%</td>
+							<td nowrap="nowrap">
+								<a href="allTestDataGapFilling.html">本题详情</a>
+							</td>
+						</tr>
+						<tr>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">主观题</td>
+							<td>Cookie是由浏览器管理，cookie是可以被禁用的。Cookie	vs	session，Cookie可以存放大量的文本数据。安全性低，效率低</td>
+							<td nowrap="nowrap">C、InterruptedException</td>
+							<td nowrap="nowrap">5</td>
+							<td nowrap="nowrap">2.5</td>
+							<td nowrap="nowrap" class="right">24</td>
+							<td nowrap="nowrap" class="error">24</td>
+							<td nowrap="nowrap">50%</td>
+							<td nowrap="nowrap">
+								<a href="allTestDataSubjective.html">本题详情</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+		</div>
+
+
+		<!--footer样式-->
+		<link rel="stylesheet" href="myCss/footer.css" />
+		<div class="container-fluid" id="urlImage">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-md-offset-1 col-lg-offset-2 Qr">
+					<p class="QRCodeFont">扫二维码<br />下载网站APP</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 hidden-xs Qr">
+					<p class="QRCodeFont">扫二维码<br />登录网站</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 Qr">
+					<p class="QRCodeFont">扫二维码<br />关注网站公众号</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+			</div>
+			
+			<ul class="list-inline">
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+			</ul>
+		</div>
+		
+		<!--版权声明-->
+		<div class="container-fluid" style="background: black;">
+			<p align="center">版权所有 @2018-20xx 一个还没有出世的公司</p>
+			<p align="center">联系我们 李四：itlisi@lisi.com</p>
+		</div>
+	</body>
+
+</html>

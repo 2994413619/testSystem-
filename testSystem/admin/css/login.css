@@ -1,0 +1,31 @@
+body{
+	background-image: url(../images/148016.jpg);
+}
+label.error{
+	background-image:url(../../img/unchecked.gif);
+	background-size: 12px;
+	padding-left:20px ;
+	background-repeat: no-repeat;
+	color:red;
+}
+label.success{
+	color: green;
+	background-image: url(../../img/checked.gif);
+	width: 14px;
+	height: 14px;
+}
+.myform{
+	margin: auto;
+	width: 530px;
+	height: 300px;
+	position:absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 3px #CCCCCC;
+    border-radius: calc(5%);
+    padding-top: 15px;
+    background-color: #eee;
+    opacity: 0.8;
+}

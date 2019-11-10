@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body onbeforeunload="xxx()">
+		<a href="http://www.baidu.com">www.baidu.com</a>
+		<script>
+			function xxx(){
+				event.returnValue =  "您的试卷修改未保存，是否确定离开？";
+			}
+			/*window.close = function(){
+				return "您的试卷修改未保存，是否确定离开？";
+			}*/
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+h1{
+	text-align: center;
+}
+.right{
+	color: #00E0B0;
+}
+.error{
+	color: red;
+}
+.testInfoFather{
+	margin-top: 30px; 
+	margin-bottom: 30px;
+	color: #ADADAD;
+}
+.testInfoFather:first{
+	max-width: 850px;
+}
+.testInfo{
+	float:left;
+	margin: 5px 50px;
+}
+#questionData td,th{
+	text-align: center;
+	vertical-align: middle;
+}
+#questionData{
+	margin-bottom: 50px;
+}
+

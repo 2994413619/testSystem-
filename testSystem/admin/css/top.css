@@ -1,0 +1,12 @@
+body{
+	background: #b1d3ea
+}
+h1{
+	font-family: "华文楷体","华文行楷","黑体","宋体","微软雅黑";
+	color:white;
+	text-align: center;
+	font-size: 55px;
+	letter-spacing: 80px;
+	text-shadow: 5px 5px 2px #ADADAD;
+	cursor: pointer;
+}

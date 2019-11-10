@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>testSystem</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.js"></script>
+
+		<link rel="icon" href="img/icon.png" />
+		
+		<!--header样式-->
+		<link rel="stylesheet" href="myCss/header.css" />
+		
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+					<a class="navbar-brand" href="index.html">首页</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="questionBank.html">题库练习</a>
+						</li>
+						<li class="active">
+							<a href="allTest.html">所有考试</a>
+						</li>
+						<li>
+							<a href="testMyself.html">自我测试</a>
+						</li>
+						<li>
+							<a href="studentManage.html">学生管理</a>
+						</li>
+						<li>
+							<a href="questionBankManage.html">题库管理</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+				        <li>
+				        	<a href="login.html">
+				        		<img src="img/noLogin.jpg" id="headImage"/>
+				        		 &nbsp;登录/注册
+				        	</a>
+				        </li>
+				        <li>
+				        	<a href="userInformation.html">
+				        		注销
+				        	</a>
+				        </li>
+				      </ul>
+					
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--testMyselfType.css-->
+		<link rel="stylesheet" href="myCss/testMyselfType.css" />
+		
+		<!--testMyselfType.js-->
+		<script type="text/javascript" src="myjs/testMyselfType.js" ></script>
+		
+		<div class="container" id="testMyselfTypeDiv">
+			<!-- Button trigger modal -->
+			<a href="#" data-toggle="modal" data-target="#myModal">
+				<div class="createDiv" id="randomDiv">
+					<div>
+						<img src="img/newTest.png" />
+						<p>随机创建测试</p>
+						<p class="prompt">随机测试：根据条件自动从题库中随机生成试卷。自我测试只能自己作答，其他用户不能访问。</p>
+					</div>
+				</div>
+			</a>
+			<a href="createTest.html">
+				<div class="createDiv" id="editDiv">
+					<div>
+						<img src="img/newTest.png" />
+						<p>自我编辑测试</p>
+						<p class="prompt">编辑测试：试卷所有题目和信息由用户自己编辑。自我测试只能自己作答，其他用户不能访问。</p>
+						
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">新建测试</h4>
+						</div>
+						<form class="form-horizontal" id="newTestSubmit">
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="level" class="col-sm-2 control-label">难度选择</label>
+									<div class="col-sm-10">
+										<select class="form-control" id="level" name="level" style="font-family: glyphicons;">
+											<option value="1">★</option>
+											<option value="2">★★</option>
+											<option value="3">★★★</option>
+											<option value="4">★★★★</option>
+											<option value="5">★★★★★</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="level" class="col-sm-2 control-label">试卷规模</label>
+									<div class="col-sm-10">
+										<select class="form-control" id="level" name="scale" style="font-family: glyphicons;">
+											<option value="1">单选10；多选5</option>
+											<option value="2">单选20；多选5</option>
+											<option value="3">单选40；多选50</option>
+											<option value="4">单选10；多选5；填空10；判断10</option>
+											<option value="5">单选10；多选5；填空10；判断10；主观3</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="level" class="col-sm-2 control-label">题目范围</label>
+									<div class="col-sm-10">
+										<div id="requestTypeUp">
+											
+										</div>
+										<div id="requestTypeDown">
+											<div class="btn requestLabel">
+											  hibernate<span class="glyphicon glyphicon-remove"></span>
+											</div>
+											<div class="btn requestLabel">
+											  Maven<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  mybatis<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  struts2<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  node.js<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  redis<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  oracle<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  webpack<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  gulp<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+											<div class="btn requestLabel">
+											  vue<span class="glyphicon glyphicon-remove" ></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" onclick="newTestSubmit()">创建</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		<!--footer样式-->
+		<link rel="stylesheet" href="myCss/footer.css" />
+		<div class="container-fluid" id="urlImage">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-md-offset-1 col-lg-offset-2 Qr">
+					<p class="QRCodeFont">扫二维码<br />下载网站APP</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 hidden-xs Qr">
+					<p class="QRCodeFont">扫二维码<br />登录网站</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 Qr">
+					<p class="QRCodeFont">扫二维码<br />关注网站公众号</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+			</div>
+			
+			<ul class="list-inline">
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+			</ul>
+		</div>
+		
+		<!--版权声明-->
+		<div class="container-fluid" style="background: black;">
+			<p align="center">版权所有 @2018-20xx 一个还没有出世的公司</p>
+			<p align="center">联系我们 李四：itlisi@lisi.com</p>
+		</div>
+	</body>
+
+</html>

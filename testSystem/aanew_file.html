@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="ddd" onchange="xxx(this.value)"/>
+		<script>
+			function xxx(val){
+				var mm = /^\w+$/;
+				alert(mm.test(val));
+			}
+			function copeTextarea(){
+				var myElement = document.getElementById("copyOfElement");
+				myElement.select();
+				document.execCommand("copy");
+				alert("复制成功");
+				myElement.blur();
+			}
+		</script>
+		<form>
+			<input type="checkbox" name="aa" value="tom" />
+			<input type="checkbox" name="aa" value="lucy" />
+			<input type="checkbox" name="aa" value="jack" />
+			<input type="submit" value="提交" />
+		</form>
+		<div style="background-color: #EEEFF1;width: 500px;height: 500px;">
+			<textarea id="copyOfElement"> asdfasdfa sdf</textarea>
+			<button onclick="copeTextarea()">copy</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+}
+.question{
+	margin:30px;
+	padding:50px 30px;
+	border-radius: 5px; 
+	background: #FFFFFF;
+	box-shadow: 0px 0px 6px #dcdcdc;
+}
+body{
+	background-color: #EEEFF1;
+}
+#saveUpdate{
+	display: block;
+	margin:40px auto;
+}
+div[id^='choose'] img{
+	cursor: pointer;
+}
+.addChoose{
+	cursor: pointer;
+}

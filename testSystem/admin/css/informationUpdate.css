@@ -1,0 +1,16 @@
+body{
+	background-color: #EEEFF1;
+}
+legend{
+	text-align: center;
+	font-family: "华文楷体";
+	font-size: 50px;
+}
+#updateDiv{
+	background-color: white;
+	margin: 10px auto;
+	border-radius: 5px;
+	box-shadow:0px 0px 6px #dcdcdc;
+	width: 700px;
+	padding: 5px;
+}

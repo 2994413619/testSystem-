@@ -1,0 +1,18 @@
+body{
+	background-color: #EEEFF1;
+}
+.shareDiv{
+	width: 100%;
+	margin: 20px auto;
+	padding: 50px 30px;
+	border-radius:5px ;
+	box-shadow: 0px 0px 6px #dcdcdc;
+	background-color: white;
+}
+.shareDiv img{
+	border: 1px solid #000000;
+	width:150px
+}
+#fatherDiv{
+	margin-bottom: 50px;
+}

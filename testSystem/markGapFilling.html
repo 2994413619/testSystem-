@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>testSystem</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.js"></script>
+
+		<link rel="icon" href="img/icon.png" />
+		
+		<!--header样式-->
+		<link rel="stylesheet" href="myCss/header.css" />
+		
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+					<a class="navbar-brand" href="index.html">首页</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="questionBank.html">题库练习</a>
+						</li>
+						<li class="active">
+							<a href="allTest.html">所有考试</a>
+						</li>
+						<li>
+							<a href="testMyself.html">自我测试</a>
+						</li>
+						<li>
+							<a href="studentManage.html">学生管理</a>
+						</li>
+						<li>
+							<a href="questionBankManage.html">题库管理</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+				        <li>
+				        	<a href="login.html">
+				        		<img src="img/noLogin.jpg" id="headImage"/>
+				        		 &nbsp;登录/注册
+				        	</a>
+				        </li>
+				        <li>
+				        	<a href="userInformation.html">
+				        		注销
+				        	</a>
+				        </li>
+				      </ul>
+					
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--mark.css-->
+		<link rel="stylesheet" href="myCss/mark.css" />
+		
+		<script type="text/javascript" src="myjs/mark.js" ></script>
+		
+		<div class="container form-horizontal" id="fatherDiv">
+			<p style="font-size: 20px;margin-top: 50px;">原题（10分）</p>
+			<div class="shareDiv">
+				<p>Cookie是由浏览器管理，cookie是可以被禁用的。______1______Cookie	vs	session，______2______Cookie可以存放大量的______3______文本数据。安全性低，效率低</p>
+			</div>
+			<p style="font-size: 20px;margin-top: 50px;">答案</p>
+			<div class="row shareDiv">
+				<div class="col-sm-6">
+					<h4>正确答案：</h4>
+					<hr />
+					<p>1、测试数据</p>
+					<p>2、测试数据</p>
+					<p>3、测试数据</p>
+					<p>4、测试数据</p>
+				</div>
+				<div class="col-sm-6" style="border-left:solid #EEEEEE 1px ;">
+					<h4>学生答案：</h4>
+					<hr />
+					<p>1、测试数据</p>
+					<p>2、测试数据</p>
+					<p>3、测试数据</p>
+					<p>4、测试数据</p>
+				</div>
+			</div>
+			<p style="font-size: 20px;margin-top: 50px;">改卷</p>
+			<div class="shareDiv">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">老师打分：</label>
+					<div class="col-sm-2">
+						<input type="number" class="form-control" placeholder="打分" autocomplete="off" onblur="setScore(this)">
+					</div>
+					<button type="button" class="btn btn-default">打分</button>
+				</div>
+			</div>
+			<div style="margin-top: 50px;">
+				<span style="font-size: 20px;margin-top: 50px;">改卷历史——100份（只显示最近10份）</span>
+				<button type="button" class="btn btn-primary pull-right">显示全部历史</button>
+			</div>
+			<div class="shareDiv">
+				<table class="table table-bordered" id="myTable">
+					<thead>
+						<tr>
+							<th nowrap="nowrap">改卷时间</th>
+							<th nowrap="nowrap">学生答案</th>
+							<th nowrap="nowrap">老师分数</th>
+							<th nowrap="nowrap">修改</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2018-11-27 00:22</td>
+							<td>
+								<p>1、测试数据</p>
+								<p>2、测试数据</p>
+								<p>3、测试数据</p>
+								<p>4、测试数据</p>
+							</td>
+							<td>5</td>
+							<td><a href="#">修改</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+		<!--footer样式-->
+		<link rel="stylesheet" href="myCss/footer.css" />
+		<div class="container-fluid" id="urlImage">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-md-offset-1 col-lg-offset-2 Qr">
+					<p class="QRCodeFont">扫二维码<br />下载网站APP</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 hidden-xs Qr">
+					<p class="QRCodeFont">扫二维码<br />登录网站</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 Qr">
+					<p class="QRCodeFont">扫二维码<br />关注网站公众号</p>
+					<div class="QRCodeImage">
+						<img src="img/myservice.jpg" width="120px"/>
+					</div>
+				</div>
+			</div>
+			
+			<ul class="list-inline">
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">友情链接</a></li>
+			</ul>
+		</div>
+		
+		<!--版权声明-->
+		<div class="container-fluid" style="background: black;">
+			<p align="center">版权所有 @2018-20xx 一个还没有出世的公司</p>
+			<p align="center">联系我们 李四：itlisi@lisi.com</p>
+		</div>
+	</body>
+
+</html>

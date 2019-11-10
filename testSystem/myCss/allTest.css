@@ -1,0 +1,108 @@
+body{
+	background-color: #EEEFF1;
+}
+/*考试div*/
+.testDiv{
+	background: rgb(255,255,255);
+	border-radius: 5px;
+	margin: 20px 0px 20px 30px;
+	box-shadow: 0px 0px 6px #dcdcdc;
+	cursor: pointer;
+	padding-bottom: 20px;
+	width: 270px;
+	height: 200px;
+}
+.testDiv:hover{
+	box-shadow: 0px 0px 6px blue;
+}
+.requestImgage{
+	width:24px;
+	height: 23px;
+	float:right;
+	position: relative;
+	margin-right: 10px;
+	background: url(../img/edit1.png);
+}
+.requestImgage:hover{
+	background: url(../img/edit2.png);
+}
+p.smallContext{
+	color:#ADADAD;
+}
+.testFatherDiv{
+	padding-left:80px ;
+	margin-top: 30px;
+	/*padding-right: 80px;*/
+	/*min-height: 549px;*/
+}
+.edit{
+	float: left;
+	margin-right:30px ;
+	color:#ADADAD;
+	padding-top:24px ;
+}
+.edit1{
+	background: url(../img/edit1.png) no-repeat;
+}
+.edit1:hover{
+	color: #2672FF;
+	background: url(../img/edit2.png) no-repeat;
+}
+.edit2{
+	background: url(../img/data1.png) no-repeat;
+}
+.edit2:hover{
+	color: #2672FF;
+	background: url(../img/data2.png) no-repeat;
+}
+.edit3{
+	background: url(../img/delete1.png) no-repeat;
+}
+.edit3:hover{
+	color: #2672FF;
+	background: url(../img/delete2.png) no-repeat;
+}
+.edit4{
+	background: url(../img/publish1.png) no-repeat;
+}
+.edit4:hover{
+	color: #2672FF;
+	background: url(../img/publish2.png) no-repeat;
+}
+#createTestByBlock{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #2672FF;
+}
+#table td{
+	vertical-align: middle;
+}
+#requestTypeUp{
+	border: 1px solid #EEEEEE;
+	box-shadow: 0px 0px 6px #dcdcdc;
+	min-height: 150px;
+	padding: 10px;
+}
+#requestTypeDown{
+	margin-top: 10px;
+	min-height: 40px;
+}
+#requestTypeDown span{
+	display: none;
+}
+.requestLabel{
+	margin-bottom:5px ;
+	margin-left: 5px;
+}
+#dumpNumber{
+	width: 80px;
+	float: right;
+	margin-top: 20px ;
+	margin-left: 25px;
+}
+#dumpButton{
+	float: right;
+	margin-top: 20px ;
+	margin-left: 15px;
+}

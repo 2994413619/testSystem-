@@ -1,0 +1,33 @@
+$(function(){
+	$("#register1").validate({
+		rules:{
+			user:{
+				required:true,
+				minlength:6
+			},
+			password:{
+				required:true,
+				digits:true,
+				minlength:5
+			},
+		},
+		messages:{
+			user:{
+				required:"用户名必填",
+				maxlength:"长度至少为六位"
+			},
+			password:{
+				required:"密码必填",
+				digits:"必须为数字",
+				minlength:"长度至少六位"
+			},
+		},
+		success:function(succ,element){
+			succ.addClass("success");  
+		},
+		errorPlacement:function(error,element){
+			error.appendTo(element.parent().parent());
+		},
+		/*errorElement:"label"*/
+	});
+});

@@ -1,0 +1,28 @@
+.registerHtml{
+	background: url(../img/15099.jpg);
+	height: 750px;
+	margin-top: -9px;
+}
+.divForm{
+	/*width: 500px;*/
+	/*margin: 200px auto;*/
+	margin-top: 25px;
+	color: white;
+	background-color: rgba(200,200,200,0.5);
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+legend{
+	color: white;
+	text-align: center;
+}
+label.error{
+	background: url(../img/unchecked.gif) no-repeat;
+	padding-left:20px ;
+	color: red;
+}
+label.success{
+	background: url(../img/checked.gif) no-repeat 100%;
+	width:14px;
+	height: 14px;
+}
